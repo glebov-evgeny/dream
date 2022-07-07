@@ -11,9 +11,11 @@
   &.out {
     transform: translateY(-100%);
   }
-  &__link{
-    font-size: 1.4rem;
-    line-height: 100%;
-    margin-right: 1rem;
+  &__nav{
+    &-link{
+      font-size: 1.4rem;
+      line-height: 100%;
+      margin-right: 1rem;
+    }
   }
 }
