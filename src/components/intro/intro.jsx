@@ -1,18 +1,13 @@
-function Intro(props){
-    const {
-        data
-    } = props;
+import React from "react";
 
-const elements = data.map((item)=>{
-    return(
-        <p className="intro__title" key={item.name}>{item.name}, {item.time}</p>
-    )
-});
+function Intro() {
 
-    return(
-        <div className="intro">
-            {elements}
-        </div>
-    )
+    return (
+        <section className="intro">
+            <div className="container">
+            </div>
+        </section>
+    );
 }
-export default Intro;
+
+export { Intro };

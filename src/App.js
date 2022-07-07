@@ -1,18 +1,12 @@
-// import { initializeApp } from "firebase/app";
-// import {
-//     Routes,
-//     Route,
-// } from "react-router-dom";
 import { Header } from "./components/header/header";
-// import Main from "./pages/main"
+import { Intro } from "./components/intro/intro";
+
 
 function App() {
     return (
         <>
         <Header/>
-        <main className="main">
-            <p>main</p>
-        </main>
+        <Intro />
         </>
     );
 }

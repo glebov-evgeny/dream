@@ -9,14 +9,12 @@ body {
   line-height: 120%;
   margin: 0;
   height: 100vh;
-  background-image: linear-gradient( 290deg, #efefef 0%, #efefef 18%, #e6e6e6 20%, #efefef 20%, #efefef 75%, #e6e6e6 80%, #efefef 80%, #e6e6e6 100% );
+  background: #eaeef6;
   color: #000;
   overflow-x: hidden;
 }
 
-.root{
-  padding: 0 1rem;
-}
+
 
 a {
   color: #000000;
@@ -330,12 +328,14 @@ select {
   display: none !important;
 }
 
-::-webkit-scrollbar-track {
+::-webkit-scrollbar-track,
+::-webkit-scrollbar-track-piece{
   background-color: rgba(0, 0, 0, 0.2);
   border-radius: 1rem;
 }
 
-::-webkit-scrollbar-thumb {
+::-webkit-scrollbar-thumb,
+::-webkit-scrollbar-thumb:vertical{
   background-color: rgba(255, 255, 255, 0.25);
   border-radius: 1rem;
 }
@@ -346,7 +346,7 @@ select {
 
 .container {
   position: relative;
-  //padding: 0 2rem;
+  padding: 0 2rem;
   width: 100%;
   margin: 0 auto;
   @media (min-width: 576px) {
