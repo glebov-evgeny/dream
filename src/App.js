@@ -49,7 +49,9 @@ function App() {
     return (
         <>
             <Header/>
-            <Intro />
+            <main className="main">
+                <Intro />
+            </main>
             <Footer />
         </>
     );

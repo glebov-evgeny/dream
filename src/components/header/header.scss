@@ -32,7 +32,7 @@
       font-size: 1.6rem;
       font-weight: 600;      
       line-height: 100%;
-      margin-bottom: .5rem;
+      margin-bottom: 1rem;
       color: #fff;
     }
   }
@@ -40,8 +40,8 @@
     max-width: 10rem;
   }
   &__burger {
-    width: 4.5rem;
-    height: 4.5rem;
+    width: 3.5rem;
+    height: 3.5rem;
     cursor: pointer;
     background: transparent;
     border: none;
@@ -50,7 +50,7 @@
     &-bar {
       height: .5rem;
       width: 100%;
-      background-color: #ff720b;
+      background-color: $violet;
       display: block;
       border-radius: .5rem;
       transition: .3s ease;
@@ -75,6 +75,9 @@
         transform: translateY(-.6rem) rotateZ(45deg);
       }
     }
+    @media (min-width: 576px)  {
+      display: none;
+    }
   }
   &__bg{
     position: fixed;
@@ -83,7 +86,7 @@
     z-index: 1;
     width: 0;
     height: 0;
-    background: #ff720b;
+    background: $violet;
     border-radius: 50%;
     transition: 0.3s ease;
     &.open{

@@ -1,6 +1,14 @@
 html{
   font-size: 10px;
 }
+
+/* variables */
+$orange: #F4A129;
+$blue: #BBE5ED;
+$violet: #6D237C;
+$pink: #F29CCB;
+
+/* common */
 body {
   font-family: "Montserrat", sans-serif;
   font-style: normal;
@@ -9,7 +17,7 @@ body {
   line-height: 120%;
   margin: 0;
   height: 100vh;
-  background: #eaeef6;
+  background: #fff;
   color: #000;
   overflow-x: hidden;
 }

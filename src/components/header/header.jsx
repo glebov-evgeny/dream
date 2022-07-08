@@ -10,6 +10,7 @@ function Header() {
         document.querySelector(".header__burger").classList.toggle("open");
         document.querySelector(".header__nav").classList.toggle("open");
         document.querySelector(".header__bg").classList.toggle("open");
+        document.querySelector(".main").classList.toggle("open");
     }
 
     return (
