@@ -12,6 +12,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: relative;
   }
   &.out {
     transform: translateY(-100%);
@@ -25,19 +26,66 @@
     top: 7.5rem;
     z-index: 5;
     transition: .3s ease;
+    @media (min-width: 576px)  {
+      flex-direction: row;
+      position: unset;
+    }
     &.open{
       right: 2rem;
     }
     &-link {
-      font-size: 1.6rem;
+      font-size: 1.8rem;
       font-weight: 600;      
       line-height: 100%;
       margin-bottom: 1rem;
       color: #fff;
+      @media (min-width: 576px)  {
+        color: #6D237C;
+        margin: 0 0 0 2rem;
+      }
     }
   }
   &__logo {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
     max-width: 10rem;
+    &:hover{
+      opacity: 1;
+    }
+    &-title{
+      font-size: 1.4rem;
+      line-height: 90%;
+      font-weight: 900;
+      color: $violet;
+      @media (min-width: 576px)  {
+        font-size: 1.6rem;
+      }
+    }
+    &-pic{
+      display: none;
+      @media (min-width: 576px)  {
+        display: block;
+        max-width: 6rem;
+        margin-right: 1rem;
+      }
+      &:hover{
+        animation: scaleTiger .3s ease-out;
+      }
+
+      @keyframes scaleTiger {
+        0%{
+          transform: scale(1);
+        }
+        65%{
+          transform: scale(1.05);
+        }
+        100%{
+
+          transform: scale(1);
+        }
+      }
+    }
   }
   &__burger {
     width: 3.5rem;
@@ -48,7 +96,7 @@
     outline: none;
     z-index: 5;
     &-bar {
-      height: .5rem;
+      height: .3rem;
       width: 100%;
       background-color: $violet;
       display: block;
@@ -65,14 +113,14 @@
     &.open{
       .header__burger-bar._01{
         background-color: #fff;
-        transform: translateY(.4rem) rotateZ(-45deg);
+        transform: translateY(.6rem) rotateZ(-45deg);
       }
       .header__burger-bar._02{
         opacity: 0;
       }
       .header__burger-bar._03{
         background-color: #fff;
-        transform: translateY(-.6rem) rotateZ(45deg);
+        transform: translateY(.1rem) rotateZ(45deg);
       }
     }
     @media (min-width: 576px)  {
@@ -81,8 +129,8 @@
   }
   &__bg{
     position: fixed;
-    right: 0;
-    top: 0;
+    right: -5rem;
+    top: -5rem;
     z-index: 1;
     width: 0;
     height: 0;

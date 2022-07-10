@@ -16,13 +16,14 @@ function Header() {
     return (
         <header className="header">
             <div className="container header__container">
-                <div className="header__logo">
-                    <p>Типа<br/>Лого</p>
-                    {/*<img src={tiger} className="header__logo-pic" alt="tiger icon" />*/}
-                </div>
+                <a href="@" className="header__logo">
+                    <img className="header__logo-pic" src={tiger} alt="tiger icon" />
+                    <p className="header__logo-title">Тигры<br/>Разума</p>
+                </a>
                 <nav className="header__nav">
-                    <Link to="/" className="header__nav-link">Home</Link>
-                    <Link to="/test" className="header__nav-link">Test</Link>
+                    <Link to="/" className="header__nav-link">Главная</Link>
+                    <Link to="/test" className="header__nav-link">О компании</Link>
+                    <Link to="/test" className="header__nav-link">Портфолио</Link>
                 </nav>
                 <button className="header__burger" onClick={()=>menuOnClick()}>
                     <div className="header__burger-bar _01"></div>
